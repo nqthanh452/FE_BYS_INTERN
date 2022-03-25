@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Trang Bài Đăng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="header shadow">
+          <div class="container">
+              <div class="row">
+                  <div class="col-2">
+                    <div><a href=""><img id="logo" src="./assets/img/logo.png"></a></div>
+                  </div>
+                  <div class="col-7">
+                    <nav class="navbar ">
+                      <form class="search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Nhập từ khóa" aria-label="Search">
+                        <button class="btn btn-outline-success " type="submit">Tìm kiếm</button>
+                      </form>
+                    </nav>
+                  </div>
+                  <div class="col-2">
+                    <div class="quanlybaidang">
+                        <p>Quản lý bài đăng</p>
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div>
+                        <a href=""><img  id="user" src="./assets/img/user.png"></a>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="app">
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-2 sidebar shadow">
+              <div class="homepage"><a href=""><img  id="homepage" src="./assets/img/home.png"></a></div>
+              <div class="row mb-4 ml-1 mt-4">
+                  <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/all.png"><span>Tổng quan</span></a></div> 
+                  <button class="row lienket" onclick="openPage('Home', this, 'red')"><a href=""><img class="sidebar-icon" src="./assets/img/all.png"><span>Tổng quan</span></a></button>                               
+              </div>
+              <div class="row  mb-4 ml-1">
+                <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/new-document.png"><span>Tạo bài đăng mới</span></a></div>             
+              </div>
+              <div class="row mb-4 ml-1">
+                <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/reply.png"><span>Đã phản hồi</span></a></div>             
+              </div>
+              <div class="row mb-4 ml-1">
+                <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/spam.png"><span>Bị đánh spam</span></a></div>             
+              </div>
+              <div class="row mb-4 ml-1">
+                <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/draft.png"><span>Chờ duyệt</span></a></div>             
+              </div>
+              <div class="row mb-4 ml-1">
+                <div class="row lienket"><a href=""><img class="sidebar-icon" src="./assets/img/key.png"><span>Đổi mật khẩu</span></a></div>             
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="mt-4">
+                <div class="form container">
+                  <div class="form-title mb-4">
+                    <p>Tạo Bài Đăng Mới</p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tiêu đề:</label>
+                    <input type="email" class="app-form-control" id="tieude" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Chọn khoa</label>
+                    <select type="form-select" class="app-form-control" id="khoa" placeholder="">
+                      <option selected>Du Lịch</option>
+                      <option value="1">Thống kê- Tin học</option>
+                      <option value="2">Thương mại điện tử</option>
+                      <option value="3">Kế Toán</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <input type='file' onchange="readURL(this);" />
+                    <img id="blah" src="http://placehold.it/180" alt="your image" />
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label">Nội dung</label>
+                    <textarea class="app-form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn">GỬI</button>
+                </div>
+                
+                
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row lienket"><a><img id="link" src="./assets/img/link.png">Liên kết hữu ích</a></div>             
+              <div><a href=""><img  class="link" src="./assets/img/quocte.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/TV.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/tvts_OK.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/ts2022_vlvh.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/banner_CTLKQT.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/img-links-03.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/img-links-05.jpg"></a></div>
+              <div><a href=""><img  class="link" src="./assets/img/MatKetLienKet_.jpg"></a></div>
+            </div>
+          </div>
+            
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <section id="cliens" class="cliens section-bg">
+          <div class="container-fluid">
+
+              <div class="row" data-aos="zoom-in">
+
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/FPT.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/bys.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/fast.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/dsa.png" class="img-fluid" alt="">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/TMA.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                      <img src="assets/img/Logo/irtech.png" class="img-fluid" alt="">
+                  </div>
+
+
+              </div>
+
+          </div>
+      </section>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+    
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+    
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+   </script>
+  </body>
+</html> 
