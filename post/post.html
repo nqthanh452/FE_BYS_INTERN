@@ -20,22 +20,23 @@
                   <div class="col-7">
                     <nav class="navbar ">
                       <form class="search">
+                        <div class="col-10">
                         <input class="form-control mr-sm-2" type="search" placeholder="Nhập từ khóa" aria-label="Search">
-                        <button class="btn btn-outline-success " type="submit">Tìm kiếm</button>
+                        </div>
+                        <div id="search" class=" col-2 ">
+                        <button class="btn btn-search " type="submit">Tìm kiếm</button>
+                        </div>
                       </form>
                     </nav>
                   </div>
-                  <div class="col-2">
-                    <div class="quanlybaidang">
-                        <p>Quản lý bài đăng</p>
+                  <div class="col-3 navbar dropdown">
+                    <button id="xinchao" class="btn dropdown-toggle " data-toggle="dropdown">Xin chào! Nguyễn Quang Thành</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#"><img class="nav-icon" src="./assets/img/key.png"><span>Đổi mật khẩu</span></a>
+                      <a class="dropdown-item" href="#"><img class="nav-icon" src="./assets/img/log-out.png"><span>Đăng xuất</span></a>
                     </div>
                   </div>
-                  <div class="col-1">
-                    <div>
-                        <a href=""><img  id="user" src="./assets/img/user.png"></a>
-                    </div>
-
-                  </div>
+                  
               </div>
           </div>
       </div>
@@ -92,7 +93,17 @@
                     <label  class="form-label">Nội dung</label>
                     <textarea class="app-form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
-                  <button type="button" class="btn">GỬI</button>
+                  <div>
+                    <div class="row">
+                      <div class="col-6">
+                        <button type="button" class="btn btn-draft">LƯU BẢN NHÁP</button>
+                        
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="btn btn-send">GỬI</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
                 
