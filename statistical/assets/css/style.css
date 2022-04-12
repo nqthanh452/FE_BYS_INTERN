@@ -132,7 +132,18 @@
 
 
  /*datepicker */ 
+.date-group{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
 
+.input-date{
+  height: 50px;
+  padding: 10px 10px;
+  border: 1px solid #dcdfe6;
+  border-radius:4px;
+}
 
 
 /* statistical */
