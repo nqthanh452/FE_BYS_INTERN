@@ -145,3 +145,12 @@ span{
     border-bottom-color: #ddd;
   }
   
+/* line limit header */
+.form-title{
+    height:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width:auto;
+    overflow-wrap:anywhere;
+
+}
