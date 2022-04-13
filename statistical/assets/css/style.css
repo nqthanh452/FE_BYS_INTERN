@@ -129,7 +129,7 @@
     border-radius: 50% !important;
   }
 
-
+/* bắt đầu CSS thống kê */
 
  /*datepicker */ 
 .date-group{
@@ -146,7 +146,7 @@
 }
 
 
-/* statistical */
+/*  */
 
 .border-left-danger {
   border-left: 0.25rem solid #dc3545 !important;
@@ -165,4 +165,24 @@
 }
 .card{
   padding: 0 0 0 0 !important;
+}
+
+
+a{
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.card:hover{
+  box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%) !important;
+}
+
+
+/* Kết thúc CSS thống kê */
+
+
+/* footer */
+.footer{
+  background-color:rgb(243,245,250);
+
 }
