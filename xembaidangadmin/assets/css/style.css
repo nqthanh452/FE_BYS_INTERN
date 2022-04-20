@@ -90,7 +90,19 @@
     border-top: 2px solid var(--divider-border-color);
   }
   
-
+  /* search */
+  /* .topbar .navbar-search{
+  width: 35rem;
+  }
+  
+  #search-height{
+  height: auto;
+  }
+  
+  #btn-search{
+  border-radius: 0 5px 5px 0 ;
+  } */
+  
   
   
   
@@ -105,29 +117,21 @@
   .rounded-circle {
     border-radius: 50% !important;
   }
-
-    /* footer */
-    .footer {
-        background-color: rgb(243, 245, 250);
-      
-      }
   
   
   /* form */
   .create-account {
+    /* border: 1px solid black !important; */
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     border-radius: 5px;
     width: 70%;
     height: auto;
-    align-items: center;
     flex-direction: column;
     position: relative;
   
   }
   
-
-  
-  
+ 
   
   input {
     outline: 0;
@@ -156,6 +160,12 @@
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    height:auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width:auto;
+    overflow-wrap:anywhere;
+    color:rgb(11, 106, 238)
   }
   
   .form-create {
@@ -170,6 +180,7 @@
   
   .form-label {
     font-weight: 600;
+    left:0;
   }
   
   .btn-create {
@@ -178,93 +189,14 @@
     font-weight: 600 !important;
     width: 100%;
     text-transform: uppercase;
-
+    /* font-size: 16px; */
+    /* border-radius: 30px!important; */
+    /* z-index: 10; */
     margin-bottom: 40px;
   }
   
-
-
-/* chuyển tabs */
-
+  /* footer */
+  .footer {
+    background-color: rgb(243, 245, 250);
   
- 
-.tabs {
-  display: flex;
-  position: relative;
-}
-.tabs .line {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 15px;
-  background-color: #2169f6;
-  transition: all 0.2s ease;
-}
-.tab-item {
-  min-width: 80px;
-  padding: 16px 20px 11px 20px;
-  font-size: 20px;
-  text-align: center;
-  color: #2169f6;
-  background-color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 5px solid transparent;
-  opacity: 0.6;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.tab-icon {
-  font-size: 24px;
-  width: 32px;
-  position: relative;
-  top: 2px;
-}
-.tab-item:hover {
-  opacity: 1;
-  background-color: rgba(84, 53, 194, 0.05);
-  border-color: rgba(84, 53, 194, 0.05);
-}
-.tab-item.active {
-  opacity: 1;
-}
-.tab-content {
-  padding: 28px 0;
-}
-.tab-pane {
-  color: #333;
-  display: none;
-}
-.tab-pane.active {
-  display: block;
-}
-.tab-pane h2 {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-
-
-/* kết thúc chuyển tabs */
-
-
-/* thanh dọc */
-.header-title{
-  font-size: 26px;
-  /* padding-top: 10px; */
-  font-weight: bold;
-  padding-left: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.header-title-separate::after{
-  content:"";
-  display: inline-block;
-  position: absolute;
-  border-left: 1px solid gray;
-  height: 420px;
-  right: 0;
-  top:0;
-}
+  }

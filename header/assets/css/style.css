@@ -15,7 +15,20 @@
     
 }
 
-.search_wrap{
+
+.navbar-search{
+width: 25rem;
+}
+
+#search-height{
+height: auto;
+}
+
+#btn-search{
+border-radius: 0 5px 5px 0 ;
+}
+
+/* .search_wrap{
     width: 500px;
 }
 
@@ -67,7 +80,7 @@
     right: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-}
+} */
 
 
 .btn-login{

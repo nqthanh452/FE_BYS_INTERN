@@ -128,9 +128,9 @@ border-radius: 0 5px 5px 0 ;
   height: auto;
   align-items: center;
   flex-direction: column;
-  position: relative;
-
 }
+
+
 
 /* .box-1{
 height: 200px;
@@ -217,3 +217,17 @@ input:focus {
   background-color: rgb(243, 245, 250);
 
 }
+
+
+/* dropdown */
+.drop{
+  position: relative !important;
+}
+
+.dropdown-menu-thongke{
+  position: relative !important;
+  top: -35px !important;
+  width: 100%;
+}
+
+

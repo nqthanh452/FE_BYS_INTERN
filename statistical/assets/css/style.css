@@ -41,9 +41,9 @@
     color: currentColor;
     text-decoration: none;
   }
-  .container {
+  /* .container {
     height: 750px;
-  }
+  } */
   .icon {
     display: inline-flex!important;
     justify-content: center!important;
