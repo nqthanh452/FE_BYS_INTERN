@@ -136,6 +136,21 @@
     top: -35px !important;
     width: 100%;
   }
-  
+
+.dropdown-menu a{
+  right: 10px !important;
+}
 
 /* table */
+td{
+  text-align: center !important;
+}
+
+th{
+  text-align: center !important;
+}
+
+/* btn */
+.btn-save{
+  height: 50px;
+}

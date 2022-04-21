@@ -249,22 +249,3 @@
 /* kết thúc chuyển tabs */
 
 
-/* thanh dọc */
-.header-title{
-  font-size: 26px;
-  /* padding-top: 10px; */
-  font-weight: bold;
-  padding-left: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.header-title-separate::after{
-  content:"";
-  display: inline-block;
-  position: absolute;
-  border-left: 1px solid gray;
-  height: 420px;
-  right: 0;
-  top:0;
-}
