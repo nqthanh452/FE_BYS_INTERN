@@ -154,3 +154,73 @@ th{
 .btn-save{
   height: 50px;
 }
+
+/* over_lay */
+.over_lay{
+  position:fixed; 
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  display: none;
+}
+
+
+.nav-input{
+  display:none;
+}
+
+.form-check-input:checked ~ .over_lay{
+  display: block;
+}
+
+
+
+
+
+/*  */
+.form-check-input:checked ~ .gb-1{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+/*  */
+.table-info th{
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+/* form */
+
+
+.close_form{
+  position: fixed;
+  top:1rem;
+  right:1rem;
+  color: #ff0022;
+  z-index: 4;
+}
+
+label{
+  margin-bottom: 0 !important;
+} 
+
+.gb-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  height: 30vh;
+  width: 80%;
+  z-index: 4;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  transform: translateY(-300%);
+  transition: transform linear 0.2s, opacity linear 0.2s;
+  opacity: 0;
+}

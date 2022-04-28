@@ -139,9 +139,10 @@
             <!--end header-->
 
             <!-- form xem và sửa tài  phòng ban-->
-            <div class="row align-items-center">
+            <div class=" align-items-center">
                 <div class="col-8">
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input id="search-height" type="text" class="form-control bg-light border-0 small"
                                 placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
@@ -151,51 +152,67 @@
                                 </button>
                             </div>
                         </div>
-                    </form> 
+                    </form>
                 </div>
 
-                
+
             </div>
-            
 
-            <div class="row mr-4 ml-4">
-                <table class="table table-hover table-bordered" >
-                  <thead>
-                    <tr class="table-info">
-                      <th scope="col" >TÊN PHÒNG BAN</th>
-                      <th scope="col">SỐ ĐIỆN THOẠI</th>
-                      <th scope="col">EMAIL</th>
-                      <th scope="col" colspan="2" >Hành động</th>
-                    </tr>
-                    
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row" contenteditable='true'>QUẢN TRỊ KINH DOANH</th>
-                      <td contenteditable='true'>482920493</td>
-                      <td contenteditable='true'>QUANTRIKINHDOANHDUE@GMAIL.COM</td>
-                      <td ><button class="btn btn-success">LƯU</td>
-                      <td><button id="delete1" class="btn btn-danger delete">Xoá</td>
-                    </tr>
-                    <tr>
-                      <th scope="row" contenteditable='true'>THỐNG KÊ TIN HỌC</th>
 
-                      <td contenteditable='true'>82733022 </td>
-                      <td contenteditable='true'>THONGKETINHOCDUE@GMAIL.COM</td>
-                      <td ><button class="btn btn-success">LƯU</td>
-                      <td ><button class="btn btn-danger delete">Xoá</td>
-                    </tr>              
-                    <tr>
-                      <th scope="row" contenteditable='true'>DU LỊCH</th>
-                      <td contenteditable='true'>488288293</td>
-                      <td contenteditable='true'>DULICHDUE@GMAIL.COM</td>
-                      <td ><button class="btn btn-success">LƯU</td>                    
-                      <td ><button class="btn btn-danger delete" id="confirmTrigger">XOÁ</button>
-                        <a id="confirmResult"></a></td>
-                    </tr>
-                  </tbody>
+            <div class=" mr-4 ml-4">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr class="table-info">
+                            <th scope="col">TÊN PHÒNG BAN</th>
+                            <th scope="col">SỐ ĐIỆN THOẠI</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col" colspan="2">Hành động</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">QUẢN TRỊ KINH DOANH</th>
+                            <td>482920493</td>
+                            <td>QUANTRIKINHDOANHDUE@GMAIL.COM</td>
+                            <td><label for="nav-input" class="btn btn-success">CHỈNH SỬA
+
+                                </label>
+
+                            </td>
+                            <input hidden class="form-check-input" type="checkbox" id="nav-input">
+                            <label for="nav-input" class="over_lay"></label>
+                            <div class="open_form container mt-10 d-flex">
+                                <label for="nav-input" class="close_form">
+                                    <i class="fa-2x fa-solid fa-square-xmark"></i>
+                                </label>
+                                <div class="form d-flex">
+                                    <div class="form-title mt-8 pb-5">
+                                        <p class="text-primary">CHỈNH SỬA PHÒNG BAN</p>
+                                    </div>
+                                    <div class="form-create d-flex">
+                                        <label for="exampleFormControlInput1" class="form-label ">TÊN PHÒNG BAN:</label>
+                                        <div class="this-typing pb-6">
+                                            <input type="text" class="form-control" name="">
+                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label">SỐ ĐIỆN THOẠI:</label>
+                                        <div class="this-typing pb-6">
+                                            <input type="text" class="form-control" name="">
+                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label">EMAIL:</label>
+                                        <div class="this-typing pb-6">
+                                            <input type="text" class="form-control" name="">
+                                        </div>
+                                        <button class="btn btn-success mb-5">LƯU</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <td><button id="delete1" class="btn btn-danger delete">Xoá</td>
+                        </tr>
+                       
+                    </tbody>
                 </table>
-              </div>
+            </div>
 
             <!-- kết thúc form xem và sửa phòng ban -->
 
@@ -229,20 +246,20 @@
     </script>
 
 
-<!--JS xoá phòng ban -->
+    <!--JS xoá phòng ban -->
     <script>
-       var deleteLinks = document.querySelectorAll('.delete');
- 
- for (var i = 0; i < deleteLinks.length; i++) {
-   deleteLinks[i].addEventListener('click', function(event) {
-    var choice = confirm("Bạn có muốn xoá phòng ban này?");
-       event.preventDefault();
-    
-       if (choice) {
-         window.location.href = this.getAttribute('href');
-       }
-   });
- }
+        var deleteLinks = document.querySelectorAll('.delete');
+
+        for (var i = 0; i < deleteLinks.length; i++) {
+            deleteLinks[i].addEventListener('click', function (event) {
+                var choice = confirm("Bạn có muốn xoá phòng ban này?");
+                event.preventDefault();
+
+                if (choice) {
+                    window.location.href = this.getAttribute('href');
+                }
+            });
+        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
